@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset=""UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="brie">
+    <meta property="og:description" content="brie's personal site :3">
+    
     <title>brie</title>
+    
+    <script type="module" src="javascript/theme-picker.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <div class="menubar">
+        <div class="themes">
+            <input type="checkbox" id="theme-menu-toggle">
+            <label for="theme-menu-toggle" class="menu-bar-button theme-menu-toggle-button">themes</label>
+            <div class="theme-menu">
+                <div class="theme-select">
+                    <div class="theme-select-entry">
+                        <label for="theme-select-entry-theme" class="theme-select-entry-label">theme</label>
+                        <select id="theme-select-entry-theme" class="theme-select-entry-choices">
+                            <option disabled selected value>select</option>
+                            <option value="dark" id="theme-choice-theme-dark" class="theme-dark">dark</option>
+                            <option value="light" id="theme-choice-theme-light" class="theme-light">light</option>
+                        </select>
+                    </div>
+                    <div class="theme-select-entry">
+                        <label for="theme-select-entry-color" class="theme-select-entry-label">accent color</label>
+                        <select id="theme-select-entry-color" class="theme-select-entry-choices">
+                            <option disabled selected value="var(--text)">select</option>
+                            <option value="var(--rosewater)" id="theme-choice-color-rosewater" class="color-rosewater">rosewater</option>
+                            <option value="var(--flamingo)" id="theme-choice-color-flamingo" class="color-flamingo">flamingo</option>
+                            <option value="var(--pink)" id="theme-choice-color-pink" class="color-pink">pink</option>
+                            <option value="var(--mauve)" id="theme-choice-color-mauve" class="color-mauve">mauve</option>
+                            <option value="var(--red)" id="theme-choice-color-red" class="color-red">red</option>
+                            <option value="var(--maroon)" id="theme-choice-color-maroon" class="color-maroon">maroon</option>
+                            <option value="var(--peach)" id="theme-choice-color-peach" class="color-peach">peach</option>
+                            <option value="var(--yellow)" id="theme-choice-color-yellow" class="color-yellow">yellow</option>
+                            <option value="var(--green)" id="theme-choice-color-green" class="color-green">green</option>
+                            <option value="var(--teal)" id="theme-choice-color-teal" class="color-teal">teal</option>
+                            <option value="var(--sky)" id="theme-choice-color-sky" class="color-sky">sky</option>
+                            <option value="var(--sapphire)" id="theme-choice-color-sapphire" class="color-sapphire">sapphire</option>
+                            <option value="var(--blue)" id="theme-choice-color-blue" class="color-blue">blue</option>
+                            <option value="var(--lavender)" id="theme-choice-color-lavender" class="color-lavender">lavender</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </head>
 <body>
-    hai!!! hi!!! :D >~<
-    <footer>
-        
-    </footer>
+    <h1>hai!!! hi!!! :D >~<</h1>
+    <p>hai!!! hi!!! :D >~<</p>
 </body>
 </html>

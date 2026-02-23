@@ -1,0 +1,34 @@
+@import "theme-variables.css";
+
+:root {
+    color: var(--text);
+    background-color: var(--base);
+    --accent-color: var(--pink);
+}
+
+h1 {
+    color: var(--accent-color);
+}
+
+option {
+    background-color: var(--surface-0);
+    color: var(--text);
+}
+
+#theme-choice-theme-dark {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+#theme-choice-theme-light {
+    background-color: #cdd0da;
+    color: #4c4f69;
+}
+
+#theme-select-entry-color option {
+    color: var(--text);
+}
+
+#theme-select-entry-color option[value] {
+    color: attr(value type(<color>)); /* ignore the errors in this one idk why it thinks it's missing ) and } cause it's not */
+}
