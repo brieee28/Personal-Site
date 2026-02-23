@@ -25,10 +25,12 @@ option {
     color: #4c4f69;
 }
 
+/* this should be a fallback for color selector text colors for browsers that don't support whatever I did here */
 #theme-select-entry-color option {
     color: var(--text);
 }
 
+/* color selector text colors */
 #theme-select-entry-color option[value] {
     color: attr(value type(<color>)); /* ignore the errors in this one idk why it thinks it's missing ) and } cause it's not */
 }
