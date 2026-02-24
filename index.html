@@ -8,30 +8,28 @@
     
     <title>brie</title>
     
-    <script type="module" src="javascript/theme-picker.js"></script>
+    <script defer type="module" src="javascript/theme-picker.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 
     <div class="menubar">
         <div class="themes">
             <input type="checkbox" id="theme-menu-toggle">
             <label for="theme-menu-toggle" class="menu-bar-button theme-menu-toggle-button">themes</label>
-            <div class="theme-menu">
+            <div class="theme-menu" id="theme-menu">
                 <div class="theme-select">
                     <div class="theme-select-entry">
                         <label for="theme-select-entry-theme" class="theme-select-entry-label">theme</label>
                         <select id="theme-select-entry-theme" class="theme-select-entry-choices">
-                            <option disabled selected value>select</option>
-                            <option value="dark" id="theme-choice-theme-dark" class="theme-dark">dark</option>
+                            <option selected value="dark" id="theme-choice-theme-dark" class="theme-dark">dark</option>
                             <option value="light" id="theme-choice-theme-light" class="theme-light">light</option>
                         </select>
                     </div>
                     <div class="theme-select-entry">
-                        <label for="theme-select-entry-color" class="theme-select-entry-label">accent color</label>
+                        <label for="theme-select-entry-color" class="theme-select-entry-label">accent</label>
                         <select id="theme-select-entry-color" class="theme-select-entry-choices">
-                            <option disabled selected value="var(--text)">select</option>
                             <option value="var(--rosewater)" id="theme-choice-color-rosewater" class="color-rosewater">rosewater</option>
                             <option value="var(--flamingo)" id="theme-choice-color-flamingo" class="color-flamingo">flamingo</option>
-                            <option value="var(--pink)" id="theme-choice-color-pink" class="color-pink">pink</option>
+                            <option selected value="var(--pink)" id="theme-choice-color-pink" class="color-pink">pink</option>
                             <option value="var(--mauve)" id="theme-choice-color-mauve" class="color-mauve">mauve</option>
                             <option value="var(--red)" id="theme-choice-color-red" class="color-red">red</option>
                             <option value="var(--maroon)" id="theme-choice-color-maroon" class="color-maroon">maroon</option>
