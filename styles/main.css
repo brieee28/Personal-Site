@@ -63,6 +63,10 @@ option {
     color: #4c4f69;
 }
 
+#theme-select-entry-color {
+    color: var(--accent-color);
+}
+
 /* this should be a fallback for color selector text colors for browsers that don't support whatever I did here */
 #theme-select-entry-color option {
     color: var(--text);
