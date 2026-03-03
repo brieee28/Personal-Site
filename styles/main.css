@@ -1,9 +1,11 @@
 @import "theme-variables.css";
+@import "fonts.css";
 
 :root {
     color: var(--text);
     background-color: var(--base);
     --accent-color: var(--pink);
+    --font: 'Inter';
 }
 
 body, html {
@@ -18,6 +20,8 @@ body, html {
     width: 100%;
     height: 100%;
     font-size: 1rem;
+    font-family: var(--font);
+    font-weight: 400;
 }
 
 html {
@@ -38,6 +42,7 @@ div {
 
 h1 {
     color: var(--accent-color);
+    font-weight: 700;
 }
 
 select {
@@ -46,11 +51,14 @@ select {
     border-radius: 0;
     color: var(--text);
     padding: 0.5rem;
+    font-family: var(--font);
+    overflow: hidden;
 }
 
 option {
     background-color: var(--surface-0);
     color: var(--text);
+    font-family: var(--font);
 }
 
 #theme-choice-theme-dark {
@@ -148,4 +156,14 @@ label {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+
+/* this should be a fallback for color selector text colors for browsers that don't support whatever I did here */
+#theme-select-entry-font option {
+    font-family: var(--font);
+}
+
+/* color selector text colors */
+#theme-select-entry-font option[value] {
+    font-family: attr(value); /* ignore the errors in this one idk why it thinks it's missing ) and } cause it's not */
 }
