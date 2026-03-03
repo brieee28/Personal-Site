@@ -90,9 +90,8 @@ option {
     justify-content: end;
     align-items: center;
     padding-left: 1rem;
-    border-bottom: .125rem solid var(--surface-0);
     height: 1px;
-    min-height: 1.5rem;
+    min-height: 2.25rem;
 }
 
 .themes {
@@ -137,13 +136,16 @@ label {
 }
 
 .theme-menu {
-    display: none;
+    display: block;
     z-index: 2;
     position: absolute;
     right: 0;
     background-color: var(--surface-0);
     padding: 1rem;
-    animation: .1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, visibility 1s;
+    transition-delay: 0.1s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .theme-select {
