@@ -24,7 +24,7 @@ themesDivElement.addEventListener("mouseleave", () => {
     themeMenuElement.style.setProperty("visibility", "hidden");
 });
 themeMenuToggleElement.addEventListener("click", () => {
-    if (themeMenuElement.style.getPropertyValue("visibility") == visible) {
+    if (themeMenuElement.style.getPropertyValue("visibility") == "visible") {
         themeMenuElement.style.setProperty("opacity", 0);
         themeMenuElement.style.setProperty("visibility", "hidden")
     }
