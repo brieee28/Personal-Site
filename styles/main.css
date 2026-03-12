@@ -40,11 +40,6 @@ div {
     display: block;
 }
 
-h1 {
-    color: var(--accent-color);
-    font-weight: 700;
-}
-
 select {
     background-color: var(--surface-1);
     border: 0;
@@ -168,4 +163,58 @@ label {
 /* color selector text colors */
 #theme-select-entry-font option[value] {
     font-family: attr(value); /* ignore the errors in this one idk why it thinks it's missing ) and } cause it's not */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+main {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    overflow-wrap: break-word;
+    max-width: 48rem;
+}
+
+h1 {
+    margin: 0;
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 3rem
+}
+
+#pronouns {
+    display: inline-block;
+    margin-left: 0.25rem;
+    color: var(--subtext-0);
+    font-weight: 700;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.buttons {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    gap: 0.25rem;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 0 !important;
+    margin: 0 !important;
 }
