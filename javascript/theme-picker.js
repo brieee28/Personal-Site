@@ -2,26 +2,18 @@ const rootElement = document.documentElement;
 
 const themeMenuElement = document.getElementById("theme-menu");
 const themeMenuToggleElement = document.getElementById("theme-menu-toggle");
-/*
+
 let themeMenuVisible = false;
 themeMenuToggleElement.addEventListener("click", () => {
     if (themeMenuVisible == false) {
         themeMenuVisible = true;
-        themeMenuElement.style.setProperty("display", "block");
+        themeMenuElement.style.setProperty("opacity", 1);
+        themeMenuElement.style.setProperty("visibility", "visible");
     } else {
         themeMenuVisible = false;
-        themeMenuElement.style.setProperty("display", "none");
+        themeMenuElement.style.setProperty("opacity", 0);
+        themeMenuElement.style.setProperty("visibility", "hidden");
     }
-});
-*/
-const themesDivElement = document.getElementById("themes-div");
-themesDivElement.addEventListener("mouseenter", () => {
-    themeMenuElement.style.setProperty("opacity", 1);
-    themeMenuElement.style.setProperty("visibility", "visible");
-});
-themesDivElement.addEventListener("mouseleave", () => {
-    themeMenuElement.style.setProperty("opacity", 0);
-    themeMenuElement.style.setProperty("visibility", "hidden");
 });
 
 const themeSelectElement = document.getElementById("theme-select-entry-theme");
